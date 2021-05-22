@@ -23,6 +23,13 @@
             android:name=".Service"
             android:exported="false"/>
 
+        <!-- Boot Reciever / Autostart -->
+        <receiver android:name=".BootReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
